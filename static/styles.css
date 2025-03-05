@@ -45,6 +45,30 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  /* 针对手机或小屏设备 */
+  .container {
+    padding: 0 1rem;
+  }
+  .content-wrapper {
+    display: block; /* 切换为单列布局 */
+    gap: 1rem;
+  }
+  .predict-container {
+    flex-direction: column;
+  }
+  /* 调整字体大小、按钮尺寸等 */
+  .site-title {
+    font-size: 1.5rem;
+  }
+  #predict-form input[type="text"],
+  #predict-form button {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}
+
+
 /* Enhanced Navigation */
 .main-nav {
   background: linear-gradient(135deg, var(--secondary-color) 0%, #2980b9 100%);
